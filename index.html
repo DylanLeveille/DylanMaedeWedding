@@ -2,15 +2,17 @@
 <html>
 
 <head>
-  <title>Bliss - Wedding Planners HTML Website Template</title>
+  <title>Dylan and Maede's Wedding</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="author" content="TemplatesJungle">
+  <meta name="author" content="Dylan Inc.">
   <meta name="keywords" content="Wedding Planners">
-  <meta name="description" content="Bliss is a Wedding Planners HTML Website Template">
+  <meta name="description" content="Wedding">
+
+  
 
   <!-- Swiper slider CSS for carousels/sliders -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
@@ -33,6 +35,10 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
     rel="stylesheet">
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 
 </head>
 
@@ -222,215 +228,14 @@
               <li class="nav-item">
                 <a class="nav-link me-4" href="index.html#aboutUs">About Us</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link me-4 dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-                  aria-expanded="false">Services</a>
-                <ul class="dropdown-menu animate slide border">
-                  <li><a href="services.html" class="dropdown-item">Services <span
-                        class="badge bg-primary">Pro</span></a></li>
-                  <li><a href="services-single.html" class="dropdown-item">Service-Details <span
-                        class="badge bg-primary">Pro</span></a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link me-4 dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-                  aria-expanded="false">Shop</a>
-                <ul class="dropdown-menu animate slide border">
-                  <li><a href="shop.html" class="dropdown-item">Shop <span class="badge bg-primary">Pro</span></a></li>
-                  <li><a href="single-product.html" class="dropdown-item">Single-Product <span
-                        class="badge bg-primary">Pro</span></a></li>
-                  <li><a href="cart.html" class="dropdown-item">Cart <span class="badge bg-primary">Pro</span></a></li>
-                  <li><a href="wishlist.html" class="dropdown-item">Wishlist <span
-                        class="badge bg-primary">Pro</span></a></li>
-                  <li><a href="checkout.html" class="dropdown-item">Checkout <span
-                        class="badge bg-primary">Pro</span></a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link me-4 dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-                  aria-expanded="false">Blog</a>
-                <ul class="dropdown-menu animate slide border">
-                  <li><a href="blog.html" class="dropdown-item">Blog <span class="badge bg-primary">Pro</span></a></li>
-                  <li><a href="single-post.html" class="dropdown-item">Single-Post <span
-                        class="badge bg-primary">Pro</span></a></li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link me-4" href="index.html#schedule">Schedule</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link me-4" href="contact.html">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fw-bold text-decoration-underline me-4"
-                  href="https://templatesjungle.gumroad.com/l/bliss" target="_blank">Get Pro</a>
+                <a class="nav-link me-4" href="index.html#rsvp">RSVP</a>
               </li>
             </ul>
-            <div class="user-items d-flex mt-4 mt-lg-0">
-              <ul class="d-flex justify-content-end align-items-center list-unstyled mb-0">
-                <li class="search-item pe-3">
-                  <a href="#" class="search-button">
-                    <svg class="search">
-                      <use xlink:href="#search"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="pe-3">
-                  <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <svg class="user">
-                      <use xlink:href="#user"></use>
-                    </svg>
-                  </a>
-                  <!-- Modal -->
-                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header border-bottom-0">
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                          <div class="tabs-listing">
-                            <nav>
-                              <div class="nav nav-tabs d-flex justify-content-center" id="nav-tab" role="tablist">
-                                <button class="nav-link text-uppercase active" id="nav-sign-in-tab" data-bs-toggle="tab"
-                                  data-bs-target="#nav-sign-in" type="button" role="tab" aria-controls="nav-sign-in"
-                                  aria-selected="true">Sign In</button>
-                                <button class="nav-link text-uppercase" id="nav-register-tab" data-bs-toggle="tab"
-                                  data-bs-target="#nav-register" type="button" role="tab" aria-controls="nav-register"
-                                  aria-selected="false">Register</button>
-                              </div>
-                            </nav>
-                            <div class="tab-content" id="nav-tabContent">
-                              <div class="tab-pane fade active show" id="nav-sign-in" role="tabpanel"
-                                aria-labelledby="nav-sign-in-tab">
-                                <div class="form-group py-3">
-                                  <label class="mb-2" for="sign-in">Username or email address *</label>
-                                  <input type="text" minlength="2" name="username" placeholder="Your Username"
-                                    class="form-control w-100 rounded-3 p-3" required>
-                                </div>
-                                <div class="form-group pb-3">
-                                  <label class="mb-2" for="sign-in">Password *</label>
-                                  <input type="password" minlength="2" name="password" placeholder="Your Password"
-                                    class="form-control w-100 rounded-3 p-3" required>
-                                </div>
-                                <label class="py-3">
-                                  <input type="checkbox" required="" class="d-inline">
-                                  <span class="label-body">Remember me</span>
-                                  <span class="label-body"><a href="#" class="fw-bold">Forgot Password</a></span>
-                                </label>
-                                <button type="submit" name="submit" class="btn btn-dark w-100 my-3">Login</button>
-                              </div>
-                              <div class="tab-pane fade" id="nav-register" role="tabpanel"
-                                aria-labelledby="nav-register-tab">
-                                <div class="form-group py-3">
-                                  <label class="mb-2" for="register">Your email address *</label>
-                                  <input type="text" minlength="2" name="username" placeholder="Your Email Address"
-                                    class="form-control w-100 rounded-3 p-3" required>
-                                </div>
-                                <div class="form-group pb-3">
-                                  <label class="mb-2" for="sign-in">Password *</label>
-                                  <input type="password" minlength="2" name="password" placeholder="Your Password"
-                                    class="form-control w-100 rounded-3 p-3" required>
-                                </div>
-                                <label class="py-3">
-                                  <input type="checkbox" required="" class="d-inline">
-                                  <span class="label-body">I agree to the <a href="#" class="fw-bold">Privacy
-                                      Policy</a></span>
-                                </label>
-                                <button type="submit" name="submit" class="btn btn-dark w-100 my-3">Register</button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="wishlist-dropdown dropdown pe-3">
-                  <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false">
-                    <svg class="wishlist">
-                      <use xlink:href="#heart"></use>
-                    </svg>
-                  </a>
-                  <div class="dropdown-menu animate slide dropdown-menu-start dropdown-menu-lg-end p-3">
-                    <h4 class="d-flex justify-content-between align-items-center mb-3">
-                      <span class="text-primary">Your wishlist</span>
-                      <span class="badge bg-primary rounded-pill">2</span>
-                    </h4>
-                    <ul class="list-group mb-3">
-                      <li class="list-group-item bg-transparent d-flex justify-content-between lh-sm">
-                        <div>
-                          <h5>
-                            <a href="single-product.html">Wedding Planning Package</a>
-                          </h5>
-                          <small>Complete wedding coordination service.</small>
-                          <a href="#" class="d-block fw-medium text-capitalize mt-2">Add to cart</a>
-                        </div>
-                        <span class="text-primary">$2,999</span>
-                      </li>
-                      <li class="list-group-item bg-transparent d-flex justify-content-between lh-sm">
-                        <div>
-                          <h5>
-                            <a href="single-product.html">Day-Of Coordination</a>
-                          </h5>
-                          <small>Professional wedding day management.</small>
-                          <a href="#" class="d-block fw-medium text-capitalize mt-2">Add to cart</a>
-                        </div>
-                        <span class="text-primary">$1,200</span>
-                      </li>
-                      <li class="list-group-item bg-transparent d-flex justify-content-between">
-                        <span class="text-uppercase"><b>Total (USD)</b></span>
-                        <strong>$4,199</strong>
-                      </li>
-                    </ul>
-                    <div class="d-flex flex-wrap justify-content-center">
-                      <a href="#" class="w-100 btn btn-dark mb-1" type="submit">Add all to cart</a>
-                      <a href="cart.html" class="w-100 btn btn-primary" type="submit">View cart</a>
-                    </div>
-                  </div>
-                </li>
-                <li class="cart-dropdown dropdown">
-                  <a href="cart.html" class="dropdown-toggle" data-bs-toggle="dropdown" role="button"
-                    aria-expanded="false">
-                    <svg class="cart">
-                      <use xlink:href="#cart"></use>
-                    </svg><span class="fs-6 fw-light">(02)</span>
-                  </a>
-                  <div class="dropdown-menu animate slide dropdown-menu-start dropdown-menu-lg-end p-3">
-                    <h4 class="d-flex justify-content-between align-items-center mb-3">
-                      <span class="text-primary">Your cart</span>
-                      <span class="badge bg-primary rounded-pill">2</span>
-                    </h4>
-                    <ul class="list-group mb-3">
-                      <li class="list-group-item bg-transparent d-flex justify-content-between lh-sm">
-                        <div>
-                          <h5>
-                            <a href="single-product.html">Wedding Photography Package</a>
-                          </h5>
-                          <small>Premium 8-hour coverage with 2 photographers.</small>
-                        </div>
-                        <span class="text-primary">$2,500</span>
-                      </li>
-                      <li class="list-group-item bg-transparent d-flex justify-content-between lh-sm">
-                        <div>
-                          <h5>
-                            <a href="single-product.html">Videography Services</a>
-                          </h5>
-                          <small>Cinematic wedding film with drone footage.</small>
-                        </div>
-                        <span class="text-primary">$1,800</span>
-                      </li>
-                      <li class="list-group-item bg-transparent d-flex justify-content-between">
-                        <span class="text-uppercase"><b>Total (USD)</b></span>
-                        <strong>$4,300</strong>
-                      </li>
-                    </ul>
-                    <div class="d-flex flex-wrap justify-content-center">
-                      <a href="cart.html" class="w-100 btn btn-dark mb-1" type="submit">View Cart</a>
-                      <a href="checkout.html" class="w-100 btn btn-primary" type="submit">Go to checkout</a>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
+            
           </div>
         </div>
       </div>
@@ -511,9 +316,7 @@
           <div class="section-title">
             <h2 class="display-4 fw-normal mb-3 text-capitalize">Our Special Day</h2>
           </div>
-          <p>Experience the perfect blend of creativity, precision, and joy with our wedding planning services. Our
-            expert planners are dedicated to crafting unforgettable celebrations, from intimate ceremonies to grand
-            receptions, ensuring your special day reflects your unique love story.</p>
+          <p>We are so happy to have you join us for our special day. As a guest to our wedding, given you mean a lot to us, we ask you do not bring any gifts. Your precense is the most important thing to us. </p>
           <!-- <a class="btn btn-primary mt-3" href="about.html">Learn More</a> -->
         </div>
       </div>
@@ -710,7 +513,7 @@
 
   <section id="price" class="overflow-hidden">
     <div class="container padding-medium">
-      <h2 class="display-4 fw-normal text-center mb-4">Schedule</h2>
+      <h2 class="display-4 fw-normal text-center mb-4" id="schedule">Schedule</h2>
       <div class="row g-lg-5">
         <div class="col-lg-4 pb-4" data-aos="fade-up" data-aos-duration="1000">
           <div class="card p-4 text-center">
@@ -738,9 +541,9 @@
             <div class="position-absolute top-0 start-0 pattern-up z-n1">
               <img src="images/bg-pattern.png" alt="pattern" class="img-fluid">
             </div>
-            <div class="position-absolute bottom-0 end-0 z-n1">
+            <!-- <div class="position-absolute bottom-0 end-0 z-n1">
               <img src="images/bg-pattern.png" alt="pattern" class="img-fluid">
-            </div>
+            </div> -->
             <div class="border border-2 border-primary rounded-2 recommend">
               <h4 class="secondary-heading mt-5">Wedding Party</h4>
               <h6 class="element-title mt-5">1:30 PM - 5:30 PM</h3>
@@ -781,518 +584,19 @@
     </div>
   </section>
 
-  <section id="package" class="overflow-hidden">
-    <div class="container-lg" data-aos="fade-up">
-      <div class="d-md-flex align-items-center justify-content-between mb-5">
-        <h2 class="display-4 fw-normal ">Popular Package</h2>
-        <a class="btn btn-primary" href="shop.html">View all</a>
-      </div>
-      <div class="swiper  swiper-carousel mb-5">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="product-item">
-              <div class="card p-3 image-holder position-relative">
-                <a href="single-product.html">
-                  <img src="images/item-6.jpg" alt="Wedding Cake" class="product-image img-fluid">
-                </a>
-                <a href="wishlist.html" class="btn-icon btn-wishlist rounded-circle">
-                  <svg width="20" height="20">
-                    <use xlink:href="#heart"></use>
-                  </svg>
-                </a>
-                <a href="cart.html" class="btn-icon btn-cart rounded-circle">
-                  <svg width="20" height="20">
-                    <use xlink:href="#cart"></use>
-                  </svg>
-                </a>
-                <div class="product-content d-flex justify-content-between align-items-center">
-                  <h5 class="element-title mt-3">
-                    <a href="single-product.html">Custom Wedding Cake</a>
-                  </h5>
-                  <h5 class="element-title mt-3">$650</h5>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="product-item">
-              <div class="card p-3 image-holder position-relative">
-                <a href="single-product.html">
-                  <img src="images/item-3.jpg" alt="Photography Package" class="product-image img-fluid">
-                </a>
-                <a href="wishlist.html" class="btn-icon btn-wishlist rounded-circle">
-                  <svg width="20" height="20">
-                    <use xlink:href="#heart"></use>
-                  </svg>
-                </a>
-                <a href="cart.html" class="btn-icon btn-cart rounded-circle">
-                  <svg width="20" height="20">
-                    <use xlink:href="#cart"></use>
-                  </svg>
-                </a>
-                <div class="product-content d-flex justify-content-between align-items-center">
-                  <h5 class="element-title mt-3">
-                    <a href="single-product.html">Photography Package</a>
-                  </h5>
-                  <h5 class="element-title mt-3">$2,500</h5>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="product-item">
-              <div class="card p-3 image-holder position-relative">
-                <a href="single-product.html">
-                  <img src="images/item-1.jpg" alt="Wedding Invitations" class="product-image img-fluid">
-                </a>
-                <a href="wishlist.html" class="btn-icon btn-wishlist rounded-circle">
-                  <svg width="20" height="20">
-                    <use xlink:href="#heart"></use>
-                  </svg>
-                </a>
-                <a href="cart.html" class="btn-icon btn-cart rounded-circle">
-                  <svg width="20" height="20">
-                    <use xlink:href="#cart"></use>
-                  </svg>
-                </a>
-                <div class="product-content d-flex justify-content-between align-items-center">
-                  <h5 class="element-title mt-3">
-                    <a href="single-product.html">Wedding Invitations</a>
-                  </h5>
-                  <h5 class="element-title mt-3">$450</h5>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="product-item">
-              <div class="card p-3 image-holder position-relative">
-                <a href="single-product.html">
-                  <img src="images/item-5.jpg" alt="Bridal Accessories" class="product-image img-fluid">
-                </a>
-                <a href="wishlist.html" class="btn-icon btn-wishlist rounded-circle">
-                  <svg width="20" height="20">
-                    <use xlink:href="#heart"></use>
-                  </svg>
-                </a>
-                <a href="cart.html" class="btn-icon btn-cart rounded-circle">
-                  <svg width="20" height="20">
-                    <use xlink:href="#cart"></use>
-                  </svg>
-                </a>
-                <div class="product-content d-flex justify-content-between align-items-center">
-                  <h5 class="element-title mt-3">
-                    <a href="single-product.html">Bridal Accessories Set</a>
-                  </h5>
-                  <h5 class="element-title mt-3">$280</h5>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="product-item">
-              <div class="card p-3 image-holder position-relative">
-                <a href="single-product.html">
-                  <img src="images/item-2.jpg" alt="Wedding Planning Package" class="product-image img-fluid">
-                </a>
-                <a href="wishlist.html" class="btn-icon btn-wishlist rounded-circle">
-                  <svg width="20" height="20">
-                    <use xlink:href="#heart"></use>
-                  </svg>
-                </a>
-                <a href="cart.html" class="btn-icon btn-cart rounded-circle">
-                  <svg width="20" height="20">
-                    <use xlink:href="#cart"></use>
-                  </svg>
-                </a>
-                <div class="product-content d-flex justify-content-between align-items-center">
-                  <h5 class="element-title mt-3">
-                    <a href="single-product.html">Wedding Planning Package</a>
-                  </h5>
-                  <h5 class="element-title mt-3">$1,999</h5>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="product-item">
-              <div class="card p-3 image-holder position-relative">
-                <a href="single-product.html">
-                  <img src="images/item-4.jpg" alt="Honeymoon Package" class="product-image img-fluid">
-                </a>
-                <a href="wishlist.html" class="btn-icon btn-wishlist rounded-circle">
-                  <svg width="20" height="20">
-                    <use xlink:href="#heart"></use>
-                  </svg>
-                </a>
-                <a href="cart.html" class="btn-icon btn-cart rounded-circle">
-                  <svg width="20" height="20">
-                    <use xlink:href="#cart"></use>
-                  </svg>
-                </a>
-                <div class="product-content d-flex justify-content-between align-items-center">
-                  <h5 class="element-title mt-3">
-                    <a href="single-product.html">Honeymoon Package</a>
-                  </h5>
-                  <h5 class="element-title mt-3">$3,200</h5>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="product-item">
-              <div class="card p-3 image-holder position-relative">
-                <a href="single-product.html">
-                  <img src="images/item-7.jpg" alt="Bridal Bouquet" class="product-image img-fluid">
-                </a>
-                <a href="wishlist.html" class="btn-icon btn-wishlist rounded-circle">
-                  <svg width="20" height="20">
-                    <use xlink:href="#heart"></use>
-                  </svg>
-                </a>
-                <a href="cart.html" class="btn-icon btn-cart rounded-circle">
-                  <svg width="20" height="20">
-                    <use xlink:href="#cart"></use>
-                  </svg>
-                </a>
-                <div class="product-content d-flex justify-content-between align-items-center">
-                  <h5 class="element-title mt-3">
-                    <a href="single-product.html">Premium Bridal Bouquet</a>
-                  </h5>
-                  <h5 class="element-title mt-3">$350</h5>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-pagination swiper-pagination-product"></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="team" class="overflow-hidden">
-    <div class="container-lg padding-medium">
-      <h6 class="fw-normal text-center text-primary">Our Team</h6>
-      <h2 class="display-4 fw-normal text-center mb-4">Meet our Professionals</h2>
-      <div class="row">
-        <div class="col-md-6 col-lg-3 my-4 my-lg-0" data-aos="fade-up" data-aos-duration="1000">
-          <div class="team-member card p-3 position-relative">
-            <div class="image-holder zoom-effect">
-              <img src="images/team1.jpg" alt="wedding planner" class="img-fluid">
-              <ul class="social-links list-unstyled position-absolute">
-                <li>
-                  <a href="#">
-                    <svg class="facebook text-white ms-1 mt-1" width="20" height="20" aria-hidden="true">
-                      <use xlink:href="#facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <svg class="twitter text-white ms-1" width="20" height="20" aria-hidden="true">
-                      <use xlink:href="#twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <svg class="instagram text-white ms-1" width="20" height="20" aria-hidden="true">
-                      <use xlink:href="#instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <svg class="linkedin text-white ms-1 mb-1" width="20" height="20" aria-hidden="true">
-                      <use xlink:href="#linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="member-info text-center">
-              <a href="team.html" class="hover-color">
-                <h4 class="mt-3 m-0">Emily Carter</h4>
-              </a>
-              <p class="m-0">Lead Wedding Planner</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 my-4 my-lg-0" data-aos="fade-up" data-aos-duration="1300">
-          <div class="team-member card p-3 position-relative">
-            <div class="image-holder zoom-effect">
-              <img src="images/team2.jpg" alt="floral designer" class="img-fluid">
-              <ul class="social-links list-unstyled position-absolute">
-                <li>
-                  <a href="#">
-                    <svg class="facebook text-white ms-1 mt-1" width="20" height="20" aria-hidden="true">
-                      <use xlink:href="#facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <svg class="twitter text-white ms-1" width="20" height="20" aria-hidden="true">
-                      <use xlink:href="#twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <svg class="instagram text-white ms-1" width="20" height="20" aria-hidden="true">
-                      <use xlink:href="#instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <svg class="linkedin text-white ms-1 mb-1" width="20" height="20" aria-hidden="true">
-                      <use xlink:href="#linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="member-info text-center">
-              <a href="team.html" class="hover-color">
-                <h4 class="mt-3 m-0">Sophia Martinez</h4>
-              </a>
-              <p class="m-0">Floral Designer</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 my-4 my-lg-0" data-aos="fade-up" data-aos-duration="1500">
-          <div class="team-member card p-3 position-relative">
-            <div class="image-holder zoom-effect">
-              <img src="images/team5.jpg" alt="venue coordinator" class="img-fluid">
-              <ul class="social-links list-unstyled position-absolute">
-                <li>
-                  <a href="#">
-                    <svg class="facebook text-white ms-1 mt-1" width="20" height="20" aria-hidden="true">
-                      <use xlink:href="#facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <svg class="twitter text-white ms-1" width="20" height="20" aria-hidden="true">
-                      <use xlink:href="#twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <svg class="instagram text-white ms-1" width="20" height="20" aria-hidden="true">
-                      <use xlink:href="#instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <svg class="linkedin text-white ms-1 mb-1" width="20" height="20" aria-hidden="true">
-                      <use xlink:href="#linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="member-info text-center">
-              <a href="team.html" class="hover-color">
-                <h4 class="mt-3 m-0">David Wilson</h4>
-              </a>
-              <p class="m-0">Venue Coordinator</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 my-4 my-lg-0" data-aos="fade-up" data-aos-duration="1900">
-          <div class="team-member card p-3 position-relative">
-            <div class="image-holder zoom-effect">
-              <img src="images/team3.jpg" alt="event designer" class="img-fluid">
-              <ul class="social-links list-unstyled position-absolute">
-                <li>
-                  <a href="#">
-                    <svg class="facebook text-white ms-1 mt-1" width="20" height="20" aria-hidden="true">
-                      <use xlink:href="#facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <svg class="twitter text-white ms-1" width="20" height="20" aria-hidden="true">
-                      <use xlink:href="#twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <svg class="instagram text-white ms-1" width="20" height="20" aria-hidden="true">
-                      <use xlink:href="#instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <svg class="linkedin text-white ms-1 mb-1" width="20" height="20" aria-hidden="true">
-                      <use xlink:href="#linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="member-info text-center">
-              <a href="team.html" class="hover-color">
-                <h4 class="mt-3 m-0">Olivia Thompson</h4>
-              </a>
-              <p class="m-0">Event Designer</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="testimonial" class="bg-primary position-relative overflow-hidden">
-    <div class="position-absolute top-0 end-0 pattern-up-about d-none d-md-block">
-      <img src="images/bg-pattern2.png" alt="pattern" class="img-fluid">
-    </div>
-    <div class="position-absolute bottom-0 d-none d-md-block">
-      <img src="images/bg-pattern2.png" alt="pattern" class="img-fluid">
-    </div>
-    <div class="container-lg padding-medium" data-aos="fade-up">
-      <div class="text-center">
-        <svg class="quote text-white-50">
-          <use xlink:href="#quote"></use>
-        </svg>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-md-6">
-          <div class="swiper testimonial-swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="review">
-                  <div class="review-content text-center">
-                    <p class="text-white fs-3 lh-base">"Emily transformed our wedding vision into reality beyond our
-                      expectations! Her attention to detail and creative solutions made our day absolutely perfect. We
-                      couldn't have done it without her expertise and calm guidance."</p>
-                    <img src="images/reviewer1.jpg" alt="reviewer" class="img-fluid rounded-circle">
-                    <h5 class="text-white m-0 lh-sm">Sarah & Michael</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="review">
-                  <div class="review-content text-center">
-                    <p class="text-white fs-3 lh-base">"From the first consultation to our magical send-off, the
-                      planning team made everything seamless. They handled every crisis before we even knew about it,
-                      allowing us to simply enjoy our special day. Worth every penny!"</p>
-                    <img src="images/reviewer2.jpg" alt="reviewer" class="img-fluid rounded-circle">
-                    <h5 class="text-white m-0 lh-sm">Jessica & David</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="review">
-                  <div class="review-content text-center">
-                    <p class="text-white fs-3 lh-base">"Our destination wedding was flawless thanks to their
-                      coordination. They managed vendors across three countries and created the most romantic atmosphere
-                      we could imagine. Every guest said it was the best wedding they'd ever attended!"</p>
-                    <img src="images/reviewer3.jpg" alt="reviewer" class="img-fluid rounded-circle">
-                    <h5 class="text-white m-0 lh-sm">Amanda & James</h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-  </section>
-
-  <section id="news" class="overflow-hidden">
-    <div class="container-lg padding-medium">
-      <h2 class="display-4 fw-normal text-center mb-5">Latest Blog Updates</h2>
-      <div class="row">
-        <div class="col-md-6 col-lg-3 mb-4 mb-lg-0" data-aos="fade-up" data-aos-duration="1000">
-          <div class="card p-3">
-            <a href="single-post.html"><img src="images/blog-1.jpg" class="img-fluid" alt="image"></a>
-            <div class="card-body p-0">
-              <p class="m-0 pt-3">10 Feb, Sun</p>
-              <a href="single-post.html" class="hover-color">
-                <h4 class="my-2">Top 2025 Wedding Trends</h4>
-              </a>
-              <p class="m-0">Discover the most romantic wedding trends for the coming year.
-                <span><a href="single-post.html" class="text-decoration-underline">Read more</a></span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 mb-4 mb-lg-0" data-aos="fade-up" data-aos-duration="1300">
-          <div class="card p-3 ">
-            <a href="single-post.html"><img src="images/blog-3.jpg" class="img-fluid" alt="image"></a>
-            <div class="card-body p-0">
-              <p class="m-0 pt-3">15 Mar, Mon</p>
-              <a href="single-post.html" class="hover-color">
-                <h4 class="my-2">Budget-Friendly Wedding Tips</h4>
-              </a>
-              <p class="m-0">How to create your dream wedding without breaking the bank. <span><a
-                    href="single-post.html" class="text-decoration-underline">Read more</a></span></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 mb-4 mb-lg-0" data-aos="fade-up" data-aos-duration="1500">
-          <div class="card p-3 ">
-            <a href="single-post.html"><img src="images/blog-2.jpg" class="img-fluid" alt="image"></a>
-            <div class="card-body p-0">
-              <p class="m-0 pt-3">22 Feb, Fri</p>
-              <a href="single-post.html" class="hover-color">
-                <h4 class="my-2">Choosing Your Perfect Venue</h4>
-              </a>
-              <p class="m-0">Expert advice for selecting a venue that matches your vision and guest list. <span><a
-                    href="single-post.html" class="text-decoration-underline">Read more</a></span></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 mb-4 mb-lg-0" data-aos="fade-up" data-aos-duration="1900">
-          <div class="card p-3 ">
-            <a href="single-post.html"><img src="images/blog-4.jpg" class="img-fluid" alt="image"></a>
-            <div class="card-body p-0">
-              <p class="m-0 pt-3">26 Apr, Tue</p>
-              <a href="single-post.html" class="hover-color">
-                <h4 class="my-2">Stress-Free Wedding Planning</h4>
-              </a>
-              <p class="m-0">Essential tips to enjoy your engagement while planning the big day. <span><a
-                    href="single-post.html" class="text-decoration-underline">Read more</a></span></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="text-center">
-        <a class="btn btn-primary mt-5" href="blog.html">Read All Blogs</a>
-      </div>
-    </div>
-    </div>
-  </section>
-
-  <section id="inquiry" class="jarallax overflow-hidden"
-    style="background-image: url(images/background-1.jpg); background-repeat: no-repeat; background-position: center;">
+  <section id="rsvp" class="jarallax overflow-hidden"
+    style="background-image: url(images/banner-ottawaCityHall.jpg); background-repeat: no-repeat; background-position: center;">
     <div class="container-lg padding-medium">
       <div class="col-md-6 text-center" data-aos="fade-right">
         <div class="card p-4">
           <div class="p-4 border border-2 border-primary rounded-2">
-            <h2 class="display-4 fw-normal mb-3">Make An Inquiry</h2>
-            <p class="">Call: 666 333 9999 or Fill in the form below</p>
+            <h2 class="display-4 fw-normal mb-3">RSVP</h2>
+            <!-- <p class="">Please fill in the form below if you are attending.</p>
             <form class="contact-form row mt-5">
               <div class="form-input col-lg-12 d-md-flex mb-3">
-                <input type="text" name="name" placeholder="Write Your Name Here"
+                <input id="name" type="text" name="name" placeholder="Write Your Name Here"
                   class="form-control w-100 ps-4 py-3 mb-2 me-3">
-                <input type="text" name="email" placeholder="Write Your Email Here"
+                <input id="email" type="text" name="email" placeholder="Write Your Email Here"
                   class="form-control w-100 ps-4 py-3 mb-2">
               </div>
               <div class="form-input col-lg-12 d-md-flex mb-3">
@@ -1307,11 +611,12 @@
                 <input type="time" name="person" placeholder="No of People" class="form-control w-100 ps-4 py-3 mb-2 ">
               </div>
               <div class="col-md-12 col-sm-12 mb-4">
-                <textarea type="text" name="message" placeholder="Your message" rows="4"
+                <textarea id="message" type="text" name="message" placeholder="Your message" rows="4"
                   class="form-control w-100 ps-4 py-3 "></textarea>
               </div>
             </form>
-            <button class="btn btn-primary mt-3" href="#">Send Now</button>
+            <button type="submit" id="submit" onclick="sendEmail()" class="btn btn-primary mt-3" href="#">Send Now</button> -->
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdijha2ayK30gkCNmU1UPQfzCtuwGlebDtyZHHe-qAJnBc5Gw/viewform?embedded=true" width="400" height="1050" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
           </div>
         </div>
       </div>
@@ -1319,13 +624,15 @@
     </div>
   </section>
 
+  
+
   <footer id="footer" class="bg-primary">
-    <div class="container-lg padding-medium text-white">
-      <div class="row ">
+    <!-- <div class="container-lg padding-medium text-white"> -->
+      <!-- <div class="row ">
         <div class="col-lg-4 my-4 ">
           <div class="footer-menu">
             <a class="navbar-brand" href="index.html">
-              <img src="images/main-logo-footer.png" class="logo img-fluid">
+              <img src="images/heart.jpg" class="logo img-fluid">
             </a>
             <p class="text-white mt-4">Hic, dolor soluta, dolores laudantium reprehenderit ullam, similique voluptate
               omnis modi
@@ -1465,12 +772,11 @@
             </ul>
           </div>
         </div>
-      </div>
-    </div>
+      </div> -->
+    <!-- </div> -->
     <div class="bg-gray border-top">
       <div class="text-center py-4">
-        <p class="text-white mb-0">©2025 Bliss. HTML Website Template by: <a href="https://templatesjungle.com/"
-            target="_blank" class="text-decoration-underline text-white"> TemplatesJungle</a></p>
+        <p class="text-white mb-0">©2025 Dylan Inc.</p>
       </div>
     </div>
   </footer>
